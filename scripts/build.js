@@ -67,7 +67,7 @@ function generateHomeHtml(lang) {
 <link rel="alternate" hreflang="tr" href="${trUrl}">
 <link rel="alternate" hreflang="x-default" href="${enUrl}">
 
-<link rel="stylesheet" href="../assets/home.css">
+<link rel="stylesheet" href="../assets/home.css?v=2.1">
 </head>
 <body>
 <a class="skip" href="#main">${isTr ? 'İçeriğe atla' : 'Skip to content'}</a>
@@ -106,7 +106,7 @@ function generateHomeHtml(lang) {
 
   <!-- Legal / Product Definition Notice -->
   <div class="legal-banner" role="note">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:24px;min-width:24px;height:24px;flex-shrink:0;color:var(--accent,#05d5ed);display:inline-block;" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
     <p><strong>${isTr ? 'Önemli Bilgilendirme:' : 'Important Notice:'}</strong> ${t.legal_banner}</p>
   </div>
 
@@ -335,8 +335,8 @@ ${faqItemsHtml}
   </div>
 </footer>
 
-<script src="../assets/translations.js"></script>
-<script src="../assets/i18n.js"></script>
+<script src="../assets/translations.js?v=2.1"></script>
+<script src="../assets/i18n.js?v=2.1"></script>
 </body>
 </html>`;
 }
@@ -364,7 +364,7 @@ function generateActivateHtml(lang) {
 <link rel="alternate" hreflang="tr" href="${trUrl}">
 <link rel="alternate" hreflang="x-default" href="${enUrl}">
 
-<link rel="stylesheet" href="../../assets/home.css">
+<link rel="stylesheet" href="../../assets/home.css?v=2.1">
 </head>
 <body>
 <a class="skip" href="#main">${isTr ? 'İçeriğe atla' : 'Skip to content'}</a>
@@ -486,8 +486,8 @@ function generateActivateHtml(lang) {
   </div>
 </footer>
 
-<script src="../../assets/translations.js"></script>
-<script src="../../assets/i18n.js"></script>
+<script src="../../assets/translations.js?v=2.1"></script>
+<script src="../../assets/i18n.js?v=2.1"></script>
 </body>
 </html>`;
 }
