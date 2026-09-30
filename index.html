@@ -85,44 +85,8 @@
   .info-box strong {
     color: var(--text);
   }
-  .sub-gallery-title {
-    margin-top: 60px;
-    font-size: 20px;
-    color: var(--text);
-    letter-spacing: -0.5px;
-  }
-  .gallery-hd {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 16px;
-    margin-top: 20px;
-  }
-  .gallery-hd a {
-    border: 1px solid var(--line);
-    border-radius: 9px;
-    overflow: hidden;
-    background: var(--panel);
-    display: block;
-  }
-  .gallery-hd img {
-    aspect-ratio: 16/9;
-    object-fit: cover;
-    width: 100%;
-    background: #07090e;
-  }
-  .gallery-hd a > span {
-    display: flex;
-    justify-content: space-between;
-    padding: 12px 14px;
-    font-size: 12px;
-    color: var(--muted);
-  }
-  .gallery-hd b {
-    color: var(--accent);
-  }
   @media(max-width: 620px) {
     .pricing-grid { grid-template-columns: 1fr; }
-    .gallery-hd { grid-template-columns: 1fr 1fr; }
     .nav nav { flex-wrap: wrap; gap: 8px 14px; }
   }
 </style>
@@ -272,16 +236,6 @@
   </div>
   <p class="demo-note">Preview artwork is for presentation only. Available titles, languages and programme information depend on your media source.</p>
 
-  <h3 class="sub-gallery-title">High-Resolution System Captures (S1–S7)</h3>
-  <div class="gallery-hd">
-    <a href="assets/screenshots/S1_HOME.png" data-preview><img src="assets/screenshots/S1_HOME.png" alt="S1: Home Dashboard" loading="lazy"><span>S1 Home <b>↗</b></span></a>
-    <a href="assets/screenshots/S2_LIVE_TV.png" data-preview><img src="assets/screenshots/S2_LIVE_TV.png" alt="S2: Live TV Grid" loading="lazy"><span>S2 Live TV <b>↗</b></span></a>
-    <a href="assets/screenshots/S3_EPG.png" data-preview><img src="assets/screenshots/S3_EPG.png" alt="S3: Multi-Channel EPG" loading="lazy"><span>S3 EPG <b>↗</b></span></a>
-    <a href="assets/screenshots/S4_MOVIES.png" data-preview><img src="assets/screenshots/S4_MOVIES.png" alt="S4: Movies Catalog" loading="lazy"><span>S4 Movies <b>↗</b></span></a>
-    <a href="assets/screenshots/S5_SERIES.png" data-preview><img src="assets/screenshots/S5_SERIES.png" alt="S5: TV Series Catalog" loading="lazy"><span>S5 Series <b>↗</b></span></a>
-    <a href="assets/screenshots/S6_SETTINGS.png" data-preview><img src="assets/screenshots/S6_SETTINGS.png" alt="S6: Settings Hub" loading="lazy"><span>S6 Settings <b>↗</b></span></a>
-    <a href="assets/screenshots/S7_DEVICE_SUBSCRIPTION.png" data-preview><img src="assets/screenshots/S7_DEVICE_SUBSCRIPTION.png" alt="S7: Device & Subscription" loading="lazy"><span>S7 Subscription <b>↗</b></span></a>
-  </div>
 </section>
 
 <section class="wrap pricing-section" id="pricing">
