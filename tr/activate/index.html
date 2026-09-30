@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CozyTV+ Premium'u Etkinleştir | Cihaz Lisansı</title>
+<meta name="description" content="CozyTV+ cihaz kodunuzu girerek 1 Yıllık veya Ömür Boyu Premium lisansınızı tek seferlik ödeme ile hemen etkinleştirin.">
+<meta name="theme-color" content="#080b10">
+
+<!-- Canonical & Hreflang SEO -->
+<link rel="canonical" href="https://htokgoz.github.io/tr/activate/">
+<link rel="alternate" hreflang="en" href="https://htokgoz.github.io/en/activate/">
+<link rel="alternate" hreflang="tr" href="https://htokgoz.github.io/tr/activate/">
+<link rel="alternate" hreflang="x-default" href="https://htokgoz.github.io/en/activate/">
+
+<link rel="stylesheet" href="../../assets/home.css">
+</head>
+<body>
+<a class="skip" href="#main">İçeriğe atla</a>
+<header>
+  <div class="nav wrap">
+    <a class="brand" href="../index.html" aria-label="CozyTV+">CozyTV<span>+</span></a>
+    <nav aria-label="Navigasyon">
+      <a href="../#features">Özellikler</a>
+      <a href="../#experience">Deneyim</a>
+      <a href="../#pricing">Fiyatlandırma</a>
+      <a href="./" style="color:var(--accent)">Lisans Etkinleştir</a>
+      <a href="../../privacy.html">Gizlilik Politikası</a>
+      <a href="../../terms.html">Kullanım Koşulları</a>
+      <a href="../../refund.html">İade Politikası</a>
+      <a href="../../support.html">İletişim ↗</a>
+    </nav>
+    <div class="lang-switcher" aria-label="Dil seçimi">
+      <a href="../../en/activate/" class="" data-lang="en" >EN</a>
+      <span class="sep">|</span>
+      <a href="../../tr/activate/" class="active" data-lang="tr" aria-current="page">TR</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap activate-hero">
+    <div class="eyebrow"><span class="dot"></span> LİSANS ETKİNLEŞTİRME</div>
+    <h1>CozyTV+ Premium'u Etkinleştir</h1>
+    <p class="intro">TV ekranınızda görünen cihaz kodunu girin ve lisans türünüzü seçin.</p>
+  </div>
+
+  <div class="wrap">
+    <div class="activate-container">
+
+      <!-- Form View -->
+      <div id="activate-form-view">
+        <form id="activate-form">
+          <div class="form-group">
+            <label for="device-code">Cihaz Kodu</label>
+            <div class="code-input-wrapper">
+              <input type="text" id="device-code" class="code-input" placeholder="CZTV-XXXX-XXXX" autocomplete="off" autocorrect="off" autocapitalize="characters" spellcheck="false" required maxlength="14">
+            </div>
+            <div class="input-hint">CozyTV+ uygulamanızda Ayarlar → Cihaz ve Abonelik ekranında bulabilirsiniz.</div>
+          </div>
+
+          <div class="plan-options">
+            <div class="plan-card" data-plan="yearly">
+              <input type="radio" name="plan" id="plan-yearly" value="yearly">
+              <div class="plan-card-title">1 Yıllık Premium</div>
+              <div class="plan-card-price">$8.99</div>
+              <p class="plan-card-desc">1 yıl kullanım</p>
+            </div>
+
+            <div class="plan-card selected" data-plan="lifetime">
+              <span class="plan-card-badge">En Avantajlı</span>
+              <input type="radio" name="plan" id="plan-lifetime" value="lifetime" checked>
+              <div class="plan-card-title">Ömür Boyu Premium</div>
+              <div class="plan-card-price">$12.99</div>
+              <p class="plan-card-desc">Bu cihaz için süresiz kullanım</p>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-submit">Güvenli Ödemeye Devam Et</button>
+
+          <div class="activate-notices">
+            <p>• Ödeme tek seferliktir. Otomatik yenileme veya abonelik bulunmaz.</p>
+            <p>• Satın alınan lisans, ödeme sırasında belirtilen CozyTV+ cihaz koduna tanımlanır.</p>
+            <p>• <strong>Ürün Tanımı:</strong> CozyTV+ Premium ile satılan ürün dijital içerik değil, yazılım kullanım lisansıdır.</p>
+          </div>
+        </form>
+      </div>
+
+      <!-- Payment Success View -->
+      <div id="activate-success-view" style="display:none;" class="status-card">
+        <div class="status-icon success" aria-hidden="true">✓</div>
+        <h2>Ödeme Başarılı</h2>
+        <p class="muted">CozyTV+ Premium lisansınız başarıyla etkinleştirildi.</p>
+        <div class="status-details">
+          <div class="status-details-row">
+            <span class="muted">Cihaz:</span>
+            <strong class="res-device-code">CZTV-XXXX-XXXX</strong>
+          </div>
+          <div class="status-details-row">
+            <span class="muted">Lisans:</span>
+            <strong class="res-plan-type">Ömür Boyu Premium</strong>
+          </div>
+        </div>
+        <p style="color:var(--accent); font-weight:600; margin-top:20px;">Artık televizyonunuza dönebilirsiniz.</p>
+      </div>
+
+      <!-- Expired License View -->
+      <div id="activate-expired-view" style="display:none;" class="status-card">
+        <div class="status-icon expired" aria-hidden="true">!</div>
+        <h2>Premium kullanım süreniz sona erdi.</h2>
+        <p class="muted">1 yıllık lisansınızı yenileyebilir veya Ömür Boyu Premium'a geçebilirsiniz.</p>
+        <div class="status-actions">
+          <a href="?plan=yearly" class="pricing-btn secondary" style="flex:1;">1 Yıl Uzat</a>
+          <a href="?plan=lifetime" class="pricing-btn primary" style="flex:1;">Ömür Boyu Premium'a Geç</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer class="wrap">
+  <div class="footer-top">
+    <div class="brand">CozyTV<span>+</span></div>
+    <nav aria-label="Yasal bağlantılar">
+      <a href="../../privacy.html">Gizlilik Politikası</a>
+      <a href="../../terms.html">Kullanım Koşulları</a>
+      <a href="../../refund.html">İade Politikası</a>
+      <a href="../../support.html">İletişim</a>
+    </nav>
+  </div>
+  <p>CozyTV+ bir medya oynatıcı uygulamasıdır. CozyTV+ herhangi bir medya içeriği veya yayın hizmeti sağlamaz.</p>
+  <div class="footer-bottom">
+    <span>© 2026 CozyTV+. Tüm hakları saklıdır.</span>
+  </div>
+</footer>
+
+<script src="../../assets/translations.js"></script>
+<script src="../../assets/i18n.js"></script>
+</body>
+</html>

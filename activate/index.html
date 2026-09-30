@@ -3,29 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CozyTV+ — Smart Media Player for LG webOS</title>
+<title>CozyTV+ Activation</title>
 <meta name="robots" content="noindex">
-<link rel="canonical" href="https://htokgoz.github.io/en/">
-<link rel="alternate" hreflang="en" href="https://htokgoz.github.io/en/">
-<link rel="alternate" hreflang="tr" href="https://htokgoz.github.io/tr/">
-<link rel="alternate" hreflang="x-default" href="https://htokgoz.github.io/en/">
 <script>
 (function() {
   var saved = localStorage.getItem('cozytv_lang');
   var lang = (saved === 'tr' || saved === 'en') ? saved : (((navigator.language || navigator.userLanguage || '').toLowerCase().indexOf('tr') === 0) ? 'tr' : 'en');
   var search = window.location.search || '';
   var hash = window.location.hash || '';
-  if (window.location.protocol === 'file:') { window.location.replace('./' + lang + '/index.html' + search + hash); } else { window.location.replace('/' + lang + '/' + search + hash); }
+  if (window.location.protocol === 'file:') { window.location.replace('../' + lang + '/activate/index.html' + search + hash); } else { window.location.replace('/' + lang + '/activate/' + search + hash); }
 })();
 </script>
-<meta http-equiv="refresh" content="0; url=/en/">
+<meta http-equiv="refresh" content="0; url=/en/activate/">
 <style>
   body { background:#080b10; color:#f5f7fa; font-family:sans-serif; text-align:center; padding-top:100px; }
   a { color:#05d5ed; text-decoration:none; margin: 0 10px; font-weight: bold; }
 </style>
 </head>
 <body>
-  <h2>CozyTV+</h2>
-  <p>Redirecting to <a href="/en/">English</a> / <a href="/tr/">Türkçe</a>...</p>
+  <h2>CozyTV+ Activation</h2>
+  <p>Redirecting to <a href="/en/activate/">English</a> / <a href="/tr/activate/">Türkçe</a>...</p>
 </body>
 </html>
