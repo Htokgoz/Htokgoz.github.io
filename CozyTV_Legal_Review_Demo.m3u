@@ -7,10 +7,12 @@
 # official broadcasters and listed by public IPTV indexes as free-to-air.
 # Availability and regional access may change at the broadcaster's discretion.
 #
-# OPEN MOVIE NOTICE
-# Blender open movies and Caminandes episodes are copyright Blender Foundation
-# and are used under the Creative Commons Attribution licence (CC BY).
+# OPEN VIDEO NOTICE
+# Sintel and Big Buck Bunny are Blender Foundation open-movie trailers (CC BY).
 # Licence information: https://studio.blender.org/remixing/
+# Mozilla's flower sample is published as CC0 test media.
+# W3C WAI videos may be used unmodified with source attribution.
+# Permission information: https://www.w3.org/WAI/about/using-wai-material/
 # This playlist is for Google Play review and player-function testing only.
 
 #EXTINF:-1 tvg-id="TRTHaber.tr" tvg-name="TRT Haber" group-title="Live TV - Turkish",TRT Haber (Turkish)
@@ -40,23 +42,23 @@ https://live-hls-web-aje.getaj.net/AJE/index.m3u8
 #EXTINF:-1 tvg-id="NHKWorldJapan.jp" tvg-name="NHK World-Japan" group-title="Live TV - Japan",NHK World-Japan
 https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
 
-#EXTINF:-1 tvg-id="movie.big-buck-bunny" tvg-name="Big Buck Bunny" group-title="Movies - CC BY",Big Buck Bunny — Blender Foundation (CC BY)
-https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4
+#EXTINF:-1 tvg-id="movie.sintel-trailer" tvg-name="Sintel Trailer" group-title="Movies - Open Demo",Sintel Trailer — Blender Foundation (CC BY)
+https://media.w3.org/2010/05/sintel/trailer.mp4
 
-#EXTINF:-1 tvg-id="movie.sintel" tvg-name="Sintel" group-title="Movies - CC BY",Sintel — Blender Foundation (CC BY)
-https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4
+#EXTINF:-1 tvg-id="movie.big-buck-bunny-trailer" tvg-name="Big Buck Bunny Trailer" group-title="Movies - Open Demo",Big Buck Bunny Trailer — Blender Foundation (CC BY)
+https://media.w3.org/2010/05/bunny/trailer.mp4
 
-#EXTINF:-1 tvg-id="movie.tears-of-steel" tvg-name="Tears of Steel" group-title="Movies - CC BY",Tears of Steel — Blender Foundation (CC BY)
-https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4
+#EXTINF:-1 tvg-id="movie.mozilla-flower" tvg-name="Flower Sample" group-title="Movies - Open Demo",Flower Sample — Mozilla (CC0)
+https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4
 
-#EXTINF:-1 tvg-id="movie.elephants-dream" tvg-name="Elephants Dream" group-title="Movies - CC BY",Elephants Dream — Blender Foundation (CC BY)
-https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4
+#EXTINF:-1 tvg-id="movie.w3c-large-controls" tvg-name="Large Controls" group-title="Movies - Open Demo",Large Links Buttons and Controls — W3C WAI
+https://media.w3.org/wai/perspective-videos/large-links-buttons-controls.mp4
 
-#EXTINF:-1 tvg-id="series.caminandes.s01e01" tvg-name="Caminandes S01E01" group-title="Series - Caminandes (CC BY)",Caminandes S01E01 — Llama Drama
-https://amssamples.streaming.mediaservices.windows.net/634cd01c-6822-4630-8444-8dd6279f94c6/CaminandesLlamaDrama4K.ism/manifest(format=m3u8-aapl)
+#EXTINF:-1 tvg-id="series.w3c-accessibility.s01e01" tvg-name="Accessibility S01E01" group-title="Series - W3C Accessibility",Accessibility S01E01 — Clear Layout and Design
+https://media.w3.org/wai/perspective-videos/clear-layout-design.mp4
 
-#EXTINF:-1 tvg-id="series.caminandes.s01e02" tvg-name="Caminandes S01E02" group-title="Series - Caminandes (CC BY)",Caminandes S01E02 — Gran Dillama
-https://video.blender.org/download/videos/a69d68a5-a0e0-4a80-9d66-49f093c97aaf-720.mp4
+#EXTINF:-1 tvg-id="series.w3c-accessibility.s01e02" tvg-name="Accessibility S01E02" group-title="Series - W3C Accessibility",Accessibility S01E02 — Colors with Good Contrast
+https://media.w3.org/wai/perspective-videos/colors-with-good-contrast.mp4
 
-#EXTINF:-1 tvg-id="series.caminandes.s01e03" tvg-name="Caminandes S01E03" group-title="Series - Caminandes (CC BY)",Caminandes S01E03 — Llamigos
-https://sveltejs.github.io/assets/caminandes-llamigos.mp4
+#EXTINF:-1 tvg-id="series.w3c-accessibility.s01e03" tvg-name="Accessibility S01E03" group-title="Series - W3C Accessibility",Accessibility S01E03 — Video Captions
+https://media.w3.org/wai/perspective-videos/video-captions.mp4
