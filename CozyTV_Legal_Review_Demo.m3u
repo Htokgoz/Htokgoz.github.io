@@ -1,0 +1,62 @@
+#EXTM3U
+# CozyTV+ Google Play Review Demo Playlist
+# Prepared: 2026-10-01
+#
+# LIVE TV NOTICE
+# The live entries below point to publicly accessible streams published by
+# official broadcasters and listed by public IPTV indexes as free-to-air.
+# Availability and regional access may change at the broadcaster's discretion.
+#
+# OPEN MOVIE NOTICE
+# Blender open movies and Caminandes episodes are copyright Blender Foundation
+# and are used under the Creative Commons Attribution licence (CC BY).
+# Licence information: https://studio.blender.org/remixing/
+# This playlist is for Google Play review and player-function testing only.
+
+#EXTINF:-1 tvg-id="TRTHaber.tr" tvg-name="TRT Haber" group-title="Live TV - Turkish",TRT Haber (Turkish)
+https://tv-trthaber.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 tvg-id="TRTKurdi.tr" tvg-name="TRT Kurdi" group-title="Live TV - Kurdish",TRT Kurdi (Kurdish)
+https://tv-trtkurdi.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 tvg-id="TRTWorld.tr" tvg-name="TRT World" group-title="Live TV - English",TRT World (English)
+https://tv-trtworld.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 tvg-id="France24.fr@English" tvg-name="France 24 English" group-title="Live TV - English",France 24 English
+https://live.france24.com/hls/live/2037218/F24_EN_HI_HLS/master_2300.m3u8
+
+#EXTINF:-1 tvg-id="France24.fr@French" tvg-name="France 24 French" group-title="Live TV - French",France 24 Français
+https://live.france24.com/hls/live/2037179/F24_FR_HI_HLS/master_2300.m3u8
+
+#EXTINF:-1 tvg-id="France24.fr@Spanish" tvg-name="France 24 Spanish" group-title="Live TV - Spanish",France 24 Español
+https://live.france24.com/hls/live/2037220/F24_ES_HI_HLS/master_2300.m3u8
+
+#EXTINF:-1 tvg-id="France24.fr@Arabic" tvg-name="France 24 Arabic" group-title="Live TV - Arabic",France 24 Arabic
+https://live.france24.com/hls/live/2037222/F24_AR_HI_HLS/master_2300.m3u8
+
+#EXTINF:-1 tvg-id="AlJazeera.qa@English" tvg-name="Al Jazeera English" group-title="Live TV - English",Al Jazeera English
+https://live-hls-web-aje.getaj.net/AJE/index.m3u8
+
+#EXTINF:-1 tvg-id="NHKWorldJapan.jp" tvg-name="NHK World-Japan" group-title="Live TV - Japan",NHK World-Japan
+https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
+
+#EXTINF:-1 tvg-id="movie.big-buck-bunny" tvg-name="Big Buck Bunny" group-title="Movies - CC BY",Big Buck Bunny — Blender Foundation (CC BY)
+https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4
+
+#EXTINF:-1 tvg-id="movie.sintel" tvg-name="Sintel" group-title="Movies - CC BY",Sintel — Blender Foundation (CC BY)
+https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4
+
+#EXTINF:-1 tvg-id="movie.tears-of-steel" tvg-name="Tears of Steel" group-title="Movies - CC BY",Tears of Steel — Blender Foundation (CC BY)
+https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4
+
+#EXTINF:-1 tvg-id="movie.elephants-dream" tvg-name="Elephants Dream" group-title="Movies - CC BY",Elephants Dream — Blender Foundation (CC BY)
+https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4
+
+#EXTINF:-1 tvg-id="series.caminandes.s01e01" tvg-name="Caminandes S01E01" group-title="Series - Caminandes (CC BY)",Caminandes S01E01 — Llama Drama
+https://amssamples.streaming.mediaservices.windows.net/634cd01c-6822-4630-8444-8dd6279f94c6/CaminandesLlamaDrama4K.ism/manifest(format=m3u8-aapl)
+
+#EXTINF:-1 tvg-id="series.caminandes.s01e02" tvg-name="Caminandes S01E02" group-title="Series - Caminandes (CC BY)",Caminandes S01E02 — Gran Dillama
+https://video.blender.org/download/videos/a69d68a5-a0e0-4a80-9d66-49f093c97aaf-720.mp4
+
+#EXTINF:-1 tvg-id="series.caminandes.s01e03" tvg-name="Caminandes S01E03" group-title="Series - Caminandes (CC BY)",Caminandes S01E03 — Llamigos
+https://sveltejs.github.io/assets/caminandes-llamigos.mp4
