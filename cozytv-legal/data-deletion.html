@@ -3,182 +3,522 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CozyTV+ Data Deletion Request</title>
-  <meta name="description" content="Data deletion policy and request procedure for CozyTV+ users.">
+  <title>CozyTV+ Data Deletion / CozyTV+ Veri Silme</title>
+  <meta name="description" content="CozyTV+ Data Deletion Policy and Request Instructions - Google Play User Data Compliance (English & Türkçe)">
+  <link rel="canonical" href="https://htokgoz.github.io/cozytv-legal/data-deletion.html">
   <style>
     :root {
       --bg: #0b1020;
       --card: #121a2f;
+      --card-alt: #18233f;
       --text: #eef2ff;
       --muted: #a9b2c7;
-      --accent: #7dd3fc;
+      --accent: #38bdf8;
+      --accent-glow: rgba(56, 189, 248, 0.15);
+      --success: #34d399;
+      --warning: #fbbf24;
+      --danger: #f87171;
       --line: #24304f;
-      --max: 980px;
+      --max: 960px;
     }
     * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, sans-serif;
-      background: linear-gradient(180deg, #0b1020, #0f172a);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(180deg, #0b1020 0%, #0f172a 100%);
       color: var(--text);
       line-height: 1.65;
+      min-height: 100vh;
     }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    a { color: var(--accent); text-decoration: none; transition: color 0.15s ease; }
+    a:hover { text-decoration: underline; color: #7dd3fc; }
     header {
       border-bottom: 1px solid var(--line);
-      background: rgba(11, 16, 32, 0.92);
+      background: rgba(11, 16, 32, 0.94);
       position: sticky;
       top: 0;
-      backdrop-filter: blur(12px);
-      z-index: 10;
+      backdrop-filter: blur(14px);
+      z-index: 50;
     }
     .nav {
       max-width: var(--max);
       margin: auto;
-      padding: 18px 22px;
+      padding: 16px 22px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 20px;
+      gap: 16px;
+      flex-wrap: wrap;
     }
-    .brand { font-weight: 800; font-size: 20px; }
+    .brand { font-weight: 800; font-size: 20px; letter-spacing: -0.02em; }
     .brand span { color: var(--accent); }
-    nav a { margin-left: 18px; color: var(--muted); }
-    main { max-width: var(--max); margin: 42px auto; padding: 0 22px 64px; }
-    article {
-      background: rgba(18, 26, 47, 0.74);
+    .brand-sub { font-size: 12px; color: var(--muted); font-weight: normal; margin-left: 6px; }
+    nav { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+    nav a { color: var(--muted); font-size: 14px; }
+    nav a.active { color: var(--accent); font-weight: 600; }
+    .lang-switcher {
+      display: inline-flex;
+      background: rgba(24, 35, 63, 0.8);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 3px;
+      margin-left: 8px;
+    }
+    .lang-btn {
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--muted);
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+    .lang-btn:hover { color: var(--text); text-decoration: none; }
+    .lang-btn.selected {
+      background: var(--accent);
+      color: #0b1020;
+    }
+    main { max-width: var(--max); margin: 36px auto; padding: 0 20px 64px; }
+    .hero-card {
+      background: linear-gradient(135deg, rgba(18, 26, 47, 0.88), rgba(24, 35, 63, 0.7));
       border: 1px solid var(--line);
       border-radius: 18px;
-      padding: 30px;
+      padding: 28px 32px;
+      margin-bottom: 28px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
     }
-    article h1 { font-size: 34px; line-height: 1.2; margin-bottom: 8px; }
-    article h2 {
-      margin-top: 32px;
-      padding-top: 10px;
-      border-top: 1px solid var(--line);
-      font-size: 22px;
+    .hero-card h1 {
+      margin: 0 0 10px;
+      font-size: 28px;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
     }
-    article h3 { margin-top: 22px; font-size: 18px; color: #fff; }
-    article p, article li { color: #d8def0; }
-    ul, ol { padding-left: 20px; }
-    li { margin-bottom: 8px; }
-    .info-box {
-      background: rgba(36, 48, 79, 0.4);
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px 24px;
+      font-size: 14px;
+      color: var(--muted);
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(36, 48, 79, 0.6);
+    }
+    .meta-item strong { color: var(--text); }
+    .badge {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      background: var(--accent-glow);
+      color: var(--accent);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      vertical-align: middle;
+      margin-left: 8px;
+    }
+    article {
+      background: rgba(18, 26, 47, 0.78);
       border: 1px solid var(--line);
-      border-left: 4px solid var(--accent);
-      border-radius: 8px;
+      border-radius: 18px;
+      padding: 32px;
+      margin-bottom: 36px;
+    }
+    article h2 {
+      margin-top: 36px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      font-size: 21px;
+      letter-spacing: -0.01em;
+      color: #fff;
+    }
+    article h2:first-of-type {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+    }
+    article h3 { margin-top: 22px; font-size: 17px; color: #e2e8f0; }
+    article p, article li { color: #cbd5e1; font-size: 15px; }
+    ul, ol { padding-left: 22px; }
+    li { margin-bottom: 8px; }
+    .box {
+      border-radius: 10px;
       padding: 16px 20px;
       margin: 20px 0;
+      font-size: 14.5px;
     }
-    .info-box p { margin: 6px 0; }
-    code {
-      background: rgba(11, 16, 32, 0.8);
+    .box-info {
+      background: rgba(36, 48, 79, 0.45);
       border: 1px solid var(--line);
-      padding: 2px 6px;
+      border-left: 4px solid var(--accent);
+    }
+    .box-warn {
+      background: rgba(251, 191, 36, 0.08);
+      border: 1px solid rgba(251, 191, 36, 0.3);
+      border-left: 4px solid var(--warning);
+    }
+    .box-danger {
+      background: rgba(248, 113, 113, 0.08);
+      border: 1px solid rgba(248, 113, 113, 0.3);
+      border-left: 4px solid var(--danger);
+    }
+    .box-success {
+      background: rgba(52, 211, 153, 0.08);
+      border: 1px solid rgba(52, 211, 153, 0.3);
+      border-left: 4px solid var(--success);
+    }
+    .box p { margin: 6px 0; }
+    .box p:first-child { margin-top: 0; }
+    .box p:last-child { margin-bottom: 0; }
+    code {
+      background: rgba(11, 16, 32, 0.85);
+      border: 1px solid var(--line);
+      padding: 2px 7px;
       border-radius: 4px;
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      color: #93c5fd;
+      color: #7dd3fc;
       font-size: 0.9em;
     }
-    footer {
-      max-width: var(--max);
-      margin: auto;
-      padding: 0 22px 32px;
-      color: var(--muted);
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
       font-size: 14px;
     }
-    @media(max-width: 760px) {
-      .nav { align-items: flex-start; flex-direction: column; }
-      nav a { margin: 0 14px 0 0; }
-      article { padding: 20px; }
+    .data-table th, .data-table td {
+      border: 1px solid var(--line);
+      padding: 10px 14px;
+      text-align: left;
+    }
+    .data-table th {
+      background: rgba(24, 35, 63, 0.8);
+      color: #fff;
+      font-weight: 600;
+    }
+    .data-table td {
+      background: rgba(18, 26, 47, 0.5);
+      color: #cbd5e1;
+    }
+    .badge-deleted { color: var(--danger); font-weight: 600; }
+    .badge-retained { color: var(--warning); font-weight: 600; }
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--line), transparent);
+      margin: 40px 0;
+    }
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 32px 20px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13.5px;
+      background: rgba(11, 16, 32, 0.8);
+    }
+    .footer-links { margin-top: 10px; }
+    .footer-links a { margin: 0 10px; color: var(--muted); }
+    .footer-links a:hover { color: var(--accent); }
+    @media (max-width: 768px) {
+      .hero-card { padding: 22px 20px; }
+      article { padding: 22px 18px; }
+      .data-table th, .data-table td { padding: 8px 10px; font-size: 13px; }
     }
   </style>
 </head>
 <body>
 <header>
   <div class="nav">
-    <div class="brand">CozyTV<span>+</span> <span style="font-size:13px;color:#a9b2c7">by Cosmo Online</span></div>
+    <div class="brand">CozyTV<span>+</span> <span class="brand-sub">by Hakan Tokgöz</span></div>
     <nav>
       <a href="/index.html">Home</a>
-      <a href="/cozytv-legal/privacy.html">Privacy</a>
+      <a href="/privacy.html">Privacy Policy</a>
       <a href="/terms.html">Terms</a>
       <a href="/support.html">Support</a>
-      <a href="/cozytv-legal/data-deletion.html" style="color:var(--accent)">Data Deletion</a>
+      <a href="/cozytv-legal/data-deletion.html" class="active">Data Deletion</a>
+      <div class="lang-switcher">
+        <a href="#en" class="lang-btn selected">English</a>
+        <a href="#tr" class="lang-btn">Türkçe</a>
+      </div>
     </nav>
   </div>
 </header>
-<main>
-<article>
-  <h1>CozyTV+ Data Deletion Request</h1>
-  <p><strong>Applies to:</strong> CozyTV+ (Android, LG webOS, iOS)</p>
-  <p><strong>Developer:</strong> Hakan Tokgöz (Cosmo Online)</p>
 
-  <div class="info-box">
-    <p><strong>Fast Summary:</strong> CozyTV+ does not require or collect user accounts (such as username, password, or email registration). However, if you wish to delete all pseudonymous backend data and verification records associated with your installation, you may submit a request using the instructions below.</p>
+<main>
+  <!-- TOP OVERVIEW HERO CARD -->
+  <div class="hero-card">
+    <h1>CozyTV+ Data Deletion / CozyTV+ Veri Silme <span class="badge">Google Play Compliance</span></h1>
+    <p style="color: #cbd5e1; margin: 0; font-size: 15.5px;">
+      Official instructions for requesting data deletion and an overview of data retention, anonymization, and Google Play compliance for <strong>CozyTV+</strong>.
+      / <strong>CozyTV+</strong> veri silme talebi, anonimleştirme ve Google Play kullanıcı verileri uyumluluk kılavuzudur.
+    </p>
+    <div class="meta-row">
+      <div class="meta-item">Application: <strong>CozyTV+</strong></div>
+      <div class="meta-item">Developer: <strong>Hakan Tokgöz</strong></div>
+      <div class="meta-item">Last Updated: <strong>October 2, 2026 (2 Ekim 2026)</strong></div>
+      <div class="meta-item">Privacy Policy: <a href="/privacy.html"><strong>Privacy Policy / Gizlilik Politikası</strong></a></div>
+    </div>
   </div>
 
-  <h2>1. Overview and Scope</h2>
-  <p>This Data Deletion policy explains how users of <strong>CozyTV+</strong>, developed by <strong>Hakan Tokgöz</strong>, can request the deletion of data associated with their application usage and backend services in accordance with Google Play's user data policies.</p>
-  <p>For complete details on what information CozyTV+ processes, please review our full <a href="/cozytv-legal/privacy.html">Privacy Policy</a>.</p>
+  <!-- PROMINENT FAST OVERVIEW BOX FOR GOOGLE PLAY REVIEW -->
+  <div class="box box-info" style="border-width: 2px;">
+    <p style="font-weight: 700; font-size: 16px; color: #fff; margin-bottom: 8px;">
+      Quick Step-by-Step Data Deletion Guide / Hızlı Veri Silme Kılavuzu:
+    </p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 12px;">
+      <div style="background: rgba(18,26,47,0.7); padding: 14px; border-radius: 8px; border: 1px solid var(--line);">
+        <strong style="color: var(--accent);">English (EN):</strong>
+        <ol style="padding-left: 18px; margin: 8px 0 0 0; font-size: 14px;">
+          <li>Open CozyTV+, navigate to <strong>Settings &gt; Device / Account Info</strong>, and note your <strong>CozyTV+ Device Code</strong> (e.g. <code>CZTV-XXXX-XXXX</code>). Users do not create accounts or passwords in CozyTV+.</li>
+          <li>Email <a href="mailto:htok2005@gmail.com"><strong>htok2005@gmail.com</strong></a> with subject <code>CozyTV+ Data Deletion Request</code> and include your Device Code. Additional information may be requested if needed for identity verification.</li>
+          <li>Requests are fulfilled within <strong>30 calendar days</strong>. Your device record is permanently anonymized, and all associated trial and Premium entitlements are removed.</li>
+        </ol>
+      </div>
+      <div style="background: rgba(18,26,47,0.7); padding: 14px; border-radius: 8px; border: 1px solid var(--line);">
+        <strong style="color: var(--accent);">Türkçe (TR):</strong>
+        <ol style="padding-left: 18px; margin: 8px 0 0 0; font-size: 14px;">
+          <li>Cihazınızda CozyTV+ uygulamasını açıp <strong>Ayarlar &gt; Cihaz / Hesap Bilgisi</strong> ekranından <strong>CozyTV+ Cihaz Kodunuzu</strong> (örn. <code>CZTV-XXXX-XXXX</code>) not edin. CozyTV+ içinde kullanıcı hesabı veya şifre oluşturulmaz.</li>
+          <li><a href="mailto:htok2005@gmail.com"><strong>htok2005@gmail.com</strong></a> adresine <code>CozyTV+ Data Deletion Request</code> konulu bir e-posta gönderin ve Cihaz Kodunuzu ekleyin. Kimlik doğrulaması için gerekmesi halinde ek bilgi istenebilir.</li>
+          <li>Talebiniz en geç <strong>30 takvim günü</strong> içinde yerine getirilir. Cihaz kaydınız kalıcı olarak anonimleştirilir, ilişkili deneme ve Premium yetki kayıtları kaldırılır.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
 
-  <h2>2. How to Request Data Deletion</h2>
-  <p>To request deletion of your backend data, please submit an email request following these steps:</p>
-  <ol>
-    <li>
-      Send an email to: <a href="mailto:htok2005@gmail.com"><strong>htok2005@gmail.com</strong></a>
-    </li>
-    <li>
-      Use the subject line: <code>CozyTV+ Data Deletion Request</code>
-    </li>
-    <li>
-      Include your <strong>CozyTV+ Device Code</strong> in the body of the message (e.g., <code>CZTV-XXXX-XXXX</code>).
-      <p style="margin-top:6px; font-size:14px; color:var(--muted);">
-        <em>Note: You can locate your Device Code inside the CozyTV+ application by navigating to <strong>Settings &gt; Device / Account Info</strong>. Because CozyTV+ does not store personal email or profile accounts, your Device Code is the required identifier to locate your backend records.</em>
-      </p>
-    </li>
-  </ol>
+  <!-- ==================== ENGLISH SECTION ==================== -->
+  <article id="en">
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+      <h2 style="margin:0; border:none; padding:0;">1. English (EN) &mdash; CozyTV+ Data Deletion Policy & Instructions</h2>
+      <a href="#tr" style="font-size:13px; color:var(--muted);">[ Switch to Türkçe &darr; ]</a>
+    </div>
 
-  <h2>3. Types of Data That Will Be Deleted</h2>
-  <p>Upon receiving and verifying your request, we will delete the following records from our backend databases (Cloudflare D1):</p>
-  <ul>
-    <li><strong>Device Code:</strong> The pseudonymous identifier assigned to your installation.</li>
-    <li><strong>Device Identifier Hash:</strong> Stable device identifier references or anonymized hardware hashes linked to your device.</li>
-    <li><strong>Trial Status:</strong> Records tracking trial activation, duration, and status.</li>
-    <li><strong>Premium Entitlement Status:</strong> Backend entitlement records granting active access to premium features.</li>
-    <li><strong>Google Play Purchase Verification Records:</strong> Purchase tokens and transaction verification records linked to the device.</li>
-  </ul>
+    <div class="box box-info" style="margin-top:20px;">
+      <p><strong>Account-Free Architecture:</strong> CozyTV+ operates without personal user accounts. You do not create or register an account with an email address or password to use player features. Backend records are strictly tied to a pseudonymous device code (e.g. <code>CZTV-XXXX-XXXX</code>). If you wish to delete your backend records and revoke device entitlements, follow the procedure detailed below.</p>
+    </div>
 
-  <h2>4. Types of Data That May Be Retained</h2>
-  <p>In certain circumstances, minimal records may be retained or cannot be immediately purged:</p>
-  <ul>
-    <li><strong>Fraud Prevention & Abuse Mitigation:</strong> Cryptographically hashed references necessary to prevent abuse of free trials or fraudulent purchase chargebacks.</li>
-    <li><strong>Legal, Accounting & Financial Compliance:</strong> Records required to comply with statutory legal obligations, tax filings, or accounting standards where mandatory under applicable law.</li>
-    <li><strong>Minimal Audit Records:</strong> Anonymized timestamps indicating that a deletion request was received and fulfilled.</li>
-  </ul>
+    <h3>1.1 How to Submit a Data Deletion Request</h3>
+    <p>To request permanent deletion or anonymization of your backend data, send an email from your personal email address with the following details:</p>
+    <ul>
+      <li><strong>Recipient Email:</strong> <a href="mailto:htok2005@gmail.com"><strong>htok2005@gmail.com</strong></a></li>
+      <li><strong>Subject Line:</strong> <code>CozyTV+ Data Deletion Request</code></li>
+      <li><strong>Required Identifier:</strong> Your <strong>CozyTV+ Device Code</strong> (format: <code>CZTV-XXXX-XXXX</code>).</li>
+    </ul>
 
-  <h2>5. Processing Timeline</h2>
-  <p>Data deletion requests are typically processed within <strong>30 calendar days</strong> of receiving your email with a valid Device Code. Once deletion is completed, a confirmation email will be sent back to you.</p>
+    <div class="box box-warn">
+      <p><strong>Where to Find Your Device Code:</strong> In CozyTV+, open <strong>Settings &gt; Device / Account Info</strong> to view your unique Device Code. Because CozyTV+ does not register user accounts, your Device Code is the essential identifier required to locate your device record in the backend.</p>
+    </div>
 
-  <h2>6. Important Considerations Before Requesting Deletion</h2>
-  <ul>
-    <li><strong>Entitlement Reset:</strong> Deleting your backend records removes your entitlement status from CozyTV+ servers. If you have an active lifetime or active subscription entitlement, deleting your backend record will unlink it from your device.</li>
-    <li><strong>Google Play Subscriptions:</strong> Deleting backend application data <em>does not</em> automatically cancel recurring subscriptions billed through Google Play. To cancel an active Google Play subscription, please visit the Google Play Store app &gt; <em>Payments &amp; subscriptions</em> &gt; <em>Subscriptions</em> on your Android device.</li>
-    <li><strong>Local Device Data:</strong> Playlists, credentials, and playback histories stored locally on your device can be removed directly by selecting <strong>Reset App</strong> in CozyTV+ settings or clearing the app storage in your operating system's settings.</li>
-  </ul>
+    <div class="box box-danger">
+      <p><strong>Security Notice &mdash; Sensitive Information Is Never Requested:</strong></p>
+      <p>We will <strong>NEVER</strong> ask for your password, Google account credentials, Google Play purchase tokens, or payment card details. <strong>Do NOT include</strong> passwords, card numbers, or purchase tokens in your email request.</p>
+    </div>
 
-  <h2>7. Privacy Policy and Inquiries</h2>
-  <p>For more information on our data handling practices, visit our <a href="/cozytv-legal/privacy.html">Privacy Policy</a>.</p>
-  <p>If you have any questions regarding this policy or data privacy, please contact the developer at <a href="mailto:htok2005@gmail.com">htok2005@gmail.com</a>.</p>
-</article>
+    <p><strong>Processing Timeline & Verification:</strong> Deletion requests are fulfilled within a maximum of <strong>30 calendar days</strong>. If necessary for identity verification or ownership confirmation, additional non-sensitive verification details may be requested. Once completed, a confirmation email will be sent to the address from which you submitted the request.</p>
+
+    <h3>1.2 CozyTV+ Access Products (Not Subscriptions)</h3>
+    <p>CozyTV+ products are not subscriptions and do not renew automatically. In the Android edition, the application offers strictly one-time purchases:</p>
+    <ul>
+      <li><strong>1-Year Premium Access:</strong> A one-time purchase granting 365 days of Premium access from the purchase date. Access concludes after 365 days unless you choose to make a new one-time purchase. It does not renew automatically.</li>
+      <li><strong>Lifetime Premium Access:</strong> A one-time purchase granting perpetual access for the respective device. It does not renew automatically.</li>
+    </ul>
+
+    <h3>1.3 Data That Is Deleted or Anonymized</h3>
+    <p>When an authorized deletion request is executed, the following operations are carried out atomically in our Cloudflare D1 backend database:</p>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Data Category</th>
+          <th>Action Taken</th>
+          <th>Technical Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Pseudonymized Device Identifier</strong></td>
+          <td><span class="badge-deleted">Permanently Overwritten</span></td>
+          <td>The application uses a one-way, pseudonymized device identifier derived from the stable device identifier provided by Android. The raw Android ID is never stored in the backend database. During deletion, the stored pseudonymized value is irreversibly overwritten with an anonymous placeholder (e.g. <code>deleted_&lt;id&gt;</code>).</td>
+        </tr>
+        <tr>
+          <td><strong>Active Premium Entitlements</strong></td>
+          <td><span class="badge-deleted">Deleted</span></td>
+          <td>All active Premium feature entitlement grants, validity timestamps, and permission flags are permanently deleted.</td>
+        </tr>
+        <tr>
+          <td><strong>Trial Period Records</strong></td>
+          <td><span class="badge-deleted">Deleted</span></td>
+          <td>Free trial start, end timestamps, and trial evaluation records are permanently deleted.</td>
+        </tr>
+        <tr>
+          <td><strong>Legacy Backend Access Records</strong></td>
+          <td><span class="badge-deleted">Deleted</span></td>
+          <td>Legacy backend access records previously designated as subscriptions in historical database tables are permanently deleted.</td>
+        </tr>
+        <tr>
+          <td><strong>Checkout &amp; Session Records</strong></td>
+          <td><span class="badge-deleted">Deleted</span></td>
+          <td>Temporary checkout and session initiation records are permanently deleted.</td>
+        </tr>
+        <tr>
+          <td><strong>Technical Metadata</strong></td>
+          <td><span class="badge-deleted">Cleared</span></td>
+          <td>Platform information is set to <code>deleted</code>, and application version metadata is cleared to <code>null</code>.</td>
+        </tr>
+        <tr>
+          <td><strong>Premium Feature Access</strong></td>
+          <td><span class="badge-deleted">Terminated</span></td>
+          <td>Access to paid features linked to the device code is immediately and permanently terminated.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>1.4 Data That Is Retained and Statutory Basis</h3>
+    <p>In compliance with statutory tax, commercial, and financial record-keeping obligations, minimal audit records are retained:</p>
+    <ul>
+      <li><strong>Device Code Audit Trail:</strong> The public device code and an anonymized placeholder row are retained solely as an audit trail of the deletion request and database anonymization.</li>
+      <li><strong>Limited Google Play Payment Audit Records:</strong> Official Google Play order IDs (e.g. <code>GPA.XXXX-XXXX</code>), transaction amounts, currency codes, payment status, and completion timestamps are retained in payment audit records.</li>
+      <li><strong>Statutory Justification:</strong> These limited payment audit records are retained exclusively to process refunds, address chargebacks, prevent fraudulent transactions, meet tax declarations, comply with accounting rules, and satisfy statutory legal audit requirements.</li>
+      <li><strong>Association:</strong> Retained financial records are linked exclusively to the anonymized device record.</li>
+      <li><strong>Identifiers NOT Stored:</strong> Plaintext purchase tokens, raw Android IDs, IPTV playlist URLs, usernames, and passwords are <strong>never stored</strong> in the backend database.</li>
+      <li><strong>Strict Purpose Limitation:</strong> Retained records are strictly restricted to statutory accounting, tax, fraud prevention, and audit obligations. They are never repurposed for profiling or marketing.</li>
+      <li><strong>Maximum Retention Period:</strong> Legally required financial and accounting records are retained for a maximum of <strong>up to 10 years</strong> in accordance with applicable tax, commercial, and accounting legislation. Once mandatory statutory retention periods expire, these records are permanently and securely deleted.</li>
+    </ul>
+
+    <h3>1.5 Consequences and Impact of Deletion on Purchases</h3>
+    <ul>
+      <li><strong>Revocation of Premium Access:</strong> A data deletion request anonymizes the device record and permanently removes trial, Premium entitlement, and access records associated with the device. Premium access linked to the deleted device code does not continue.</li>
+      <li><strong>No Automatic Refund or Order Cancellation:</strong> The data deletion process does NOT cancel your Google Play order and does NOT issue an automatic refund.</li>
+      <li><strong>Google Account Order History:</strong> Google Play order and payment records are managed directly by Google LLC and are subject to Google's own retention and privacy policies. CozyTV+ cannot modify or delete transaction history stored in your personal Google account.</li>
+      <li><strong>Reinstalling the Application:</strong> If you reinstall CozyTV+, restoring purchases depends entirely on real-time Google Play verification and product validity for your Google account.</li>
+      <li><strong>Local Playlists and Credentials:</strong> Playlists, Xtream credentials, and playback histories stored locally on your device are never transmitted to CozyTV+ servers. You can erase them at any time by selecting <em>Reset App</em> in CozyTV+ settings or clearing application storage in device settings.</li>
+    </ul>
+
+    <h3>1.6 Privacy Policy &amp; Inquiries</h3>
+    <p>For comprehensive details on our data handling practices, please review our full <a href="/privacy.html">Privacy Policy</a>.</p>
+    <p>For data deletion requests or privacy inquiries, contact the developer directly at: <a href="mailto:htok2005@gmail.com"><strong>htok2005@gmail.com</strong></a>.</p>
+  </article>
+
+  <div class="divider"></div>
+
+  <!-- ==================== TURKISH SECTION ==================== -->
+  <article id="tr">
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+      <h2 style="margin:0; border:none; padding:0;">2. Türkçe (TR) &mdash; CozyTV+ Veri Silme Politikası ve Talep Kılavuzu</h2>
+      <a href="#en" style="font-size:13px; color:var(--muted);">[ Switch to English &uarr; ]</a>
+    </div>
+
+    <div class="box box-info" style="margin-top:20px;">
+      <p><strong>Hesapsız Kullanım Mimarisi:</strong> CozyTV+ uygulamasında kullanıcı hesabı zorunluluğu bulunmamaktadır. Oynatıcı fonksiyonları e-posta veya parola ile kişisel hesap açılmadan kullanılır. Sunucu tarafındaki kayıtlar yalnızca rastgele türetilmiş takma adlı cihaz kodları (örn. <code>CZTV-XXXX-XXXX</code>) ile ilişkilendirilir. Sunucu kayıtlarınızın silinmesini ve cihaz lisansınızın kaldırılmasını istiyorsanız aşağıdaki adımları izleyebilirsiniz.</p>
+    </div>
+
+    <h3>2.1 Veri Silme Talebi Nasıl Gönderilir?</h3>
+    <p>Sunucu tarafındaki verilerinizin silinmesi veya anonimleştirilmesi talebinde bulunmak için kişisel e-posta adresinizden şu bilgilerle başvuru yapınız:</p>
+    <ul>
+      <li><strong>Alıcı E-posta:</strong> <a href="mailto:htok2005@gmail.com"><strong>htok2005@gmail.com</strong></a></li>
+      <li><strong>E-posta Konusu:</strong> <code>CozyTV+ Data Deletion Request</code></li>
+      <li><strong>Gerekli Tanımlayıcı:</strong> CozyTV+ uygulamanızda görüntülenen <strong>Cihaz Kodu</strong> (örnek: <code>CZTV-XXXX-XXXX</code>).</li>
+    </ul>
+
+    <div class="box box-warn">
+      <p><strong>Cihaz Kodunu Nerede Bulabilirsiniz?</strong> CozyTV+ içinde <strong>Ayarlar &gt; Cihaz / Hesap Bilgisi</strong> ekranına giderek cihazınıza atanmış Cihaz Kodunu görebilirsiniz. CozyTV+ kullanıcı hesabı tutmadığından, sunucuda cihazınıza ait kayıtları bulabilmemiz için Cihaz Kodu zorunlu temel tanımlayıcıdır.</p>
+    </div>
+
+    <div class="box box-danger">
+      <p><strong>Önemli Güvenlik Bildirimi &mdash; Parola veya Finansal Bilgi İstenmez:</strong></p>
+      <p>Tarafımızca sizden <strong>kesinlikle</strong> hesap şifreniz, Google hesap bilgileriniz, Google Play satın alma token'ınız veya kredi/banka kartı bilgileriniz istenmez. E-postanıza <strong>asla</strong> şifre, kart numarası veya satın alma token'ı eklemeyiniz.</p>
+    </div>
+
+    <p><strong>İşlem Süresi ve Doğrulama:</strong> Veri silme talepleri, geçerli Cihaz Kodu içeren e-postanızın ulaşmasından itibaren en geç <strong>30 takvim günü</strong> içinde yerine getirilir. Kimlik doğrulaması veya cihaz sahipliğinin teyidi için gerekli olması halinde ek bilgi talep edilebilir. İşlem tamamlandığında tarafınıza teyit e-postası gönderilir.</p>
+
+    <h3>2.2 CozyTV+ Erişim Ürünleri (Abonelik Değildir)</h3>
+    <p>CozyTV+ ürünleri abonelik değildir ve kendiliğinden yenilenmez. Android sürümünde yalnızca tek seferlik satın almalar sunulmaktadır:</p>
+    <ul>
+      <li><strong>1-Year Premium Access (1 Yıllık Premium Erişim):</strong> Satın alma tarihinden itibaren 365 günlük Premium erişim sağlayan tek seferlik satın almadır. Yeni bir tek seferlik satın alma yapılmadığı sürece erişim 365 günün sonunda biter. Kendiliğinden yenilenmez.</li>
+      <li><strong>Lifetime Premium Access (Süresiz Premium Erişim):</strong> İlgili cihaz için süresiz erişim sağlayan tek seferlik satın almadır. Kendiliğinden yenilenmez.</li>
+    </ul>
+
+    <h3>2.3 Silinen veya Anonimleştirilen Veriler</h3>
+    <p>Yetkili bir silme talebi uygulandığında backend veritabanımızda (Cloudflare D1) şu işlemler atomik olarak gerçekleştirilir:</p>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Veri Kategorisi</th>
+          <th>Uygulanan İşlem</th>
+          <th>Açıklama</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Takma Adlı Cihaz Tanımlayıcısı</strong></td>
+          <td><span class="badge-deleted">Kalıcı Olarak Üzerine Yazılır</span></td>
+          <td>Uygulama, Android tarafından sağlanan kararlı cihaz tanımlayıcısından türetilmiş, tek yönlü ve takma adlı bir cihaz kimliği kullanır. Ham Android kimliği backend veritabanında asla saklanmaz. Veri silme sırasında saklanan bu takma adlı cihaz kimliği değeri geri döndürülemeyecek şekilde anonim bir işaretçi (örn. <code>deleted_&lt;id&gt;</code>) ile üzerine yazılarak silinir.</td>
+        </tr>
+        <tr>
+          <td><strong>Aktif Premium Yetki Kayıtları</strong></td>
+          <td><span class="badge-deleted">Silinir</span></td>
+          <td>Cihaza tanımlı Premium yetki (entitlement) kayıtları, lisans bayrakları ve geçerlilik tarihleri veritabanından kalıcı olarak silinir.</td>
+        </tr>
+        <tr>
+          <td><strong>Deneme Süresi Kayıtları</strong></td>
+          <td><span class="badge-deleted">Silinir</span></td>
+          <td>Deneme başlangıcı, süresi ve kullanım durumu kayıtları veritabanından tamamen silinir.</td>
+        </tr>
+        <tr>
+          <td><strong>Eski Backend Erişim Kayıtları</strong></td>
+          <td><span class="badge-deleted">Silinir</span></td>
+          <td>Abonelik olarak adlandırılmış eski backend erişim kayıtları veritabanından kalıcı olarak silinir.</td>
+        </tr>
+        <tr>
+          <td><strong>Checkout ve Oturum Kayıtları</strong></td>
+          <td><span class="badge-deleted">Silinir</span></td>
+          <td>Ödeme başlatma ve oturum kayıtları tamamen silinir.</td>
+        </tr>
+        <tr>
+          <td><strong>Teknik Meta Veriler</strong></td>
+          <td><span class="badge-deleted">Sıfırlanır</span></td>
+          <td>Platform bilgisi <code>deleted</code> yapılır, uygulama sürüm bilgisi <code>null</code> olarak temizlenir.</td>
+        </tr>
+        <tr>
+          <td><strong>Premium Özellik Erişimi</strong></td>
+          <td><span class="badge-deleted">Sonlandırılır</span></td>
+          <td>Cihazın CozyTV+ Premium özelliklerine erişimi silme anında derhal kaldırılır.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>2.4 Saklanan Veriler ve Yasal Saklama Gerekçeleri</h3>
+    <p>Yürürlükteki yasal mevzuat gereğince belirli sınırlı muhasebe ve denetim kayıtları saklanmak zorundadır:</p>
+    <ul>
+      <li><strong>Cihaz Kodu Denetim İzi:</strong> Cihaz kodu ve anonimleştirilmiş cihaz satırı, silme talebinin ve anonimleştirmenin denetim izini korumak ve veritabanı ilişkisel bütünlüğünü sağlamak amacıyla saklanabilir.</li>
+      <li><strong>Sınırlı Google Play Sipariş ve Denetim Kayıtları:</strong> Resmi Google Play sipariş numarası (örn. <code>GPA.XXXX-XXXX</code>), işlem tutarı, para birimi, ödeme durumu ve işlem zamanı ödeme denetim tablosunda tutulur.</li>
+      <li><strong>Zorunlu Yasal Amaçlar:</strong> Bu sınırlı ödeme kayıtları; iade ve ters ibraz (chargeback) süreçleri, dolandırıcılık önleme, vergi beyanları, muhasebe mevzuatı ve kanuni denetim yükümlülüklerinin karşılanması amacıyla zorunlu olarak saklanır.</li>
+      <li><strong>İlişkilendirme:</strong> Saklanan finansal kayıtlar artık anonimleştirilmiş cihaz kaydıyla ilişkilidir.</li>
+      <li><strong>Saklanmayan Veriler:</strong> Satın alma token'ının açık metni, ham Android ID, IPTV liste URL'leri, kullanıcı adı ve parolalar <strong>kesinlikle saklanmaz</strong>.</li>
+      <li><strong>Amaca Bağlılık İlkesi:</strong> Saklanan kayıtlar yalnızca ve münhasıran yasal, vergisel, dolandırıcılık önleme ve denetim yükümlülükleri için kullanılır. Pazarlama veya profilleme amacıyla asla kullanılmaz.</li>
+      <li><strong>Azami Saklama Süresi:</strong> Yasal olarak saklanması zorunlu olan muhasebe ve vergi kayıtları, uygulanabilir mevzuat hükümleri uyarınca <strong>en fazla 10 yıl</strong> süreyle saklanabilir. Yasal saklama zorunluluğu süresi sona erdiğinde bu kayıtlar kalıcı ve güvenli biçimde silinir.</li>
+    </ul>
+
+    <h3>2.5 Silme İşleminin Google Play Satın Almalarına Etkisi</h3>
+    <ul>
+      <li><strong>Premium Lisansının Kaldırılması:</strong> Veri silme talebi cihaz kaydını anonimleştirir ve cihazla ilişkili deneme, Premium yetkisi ve erişim kayıtlarını kaldırır. Veri silme sonrasında aynı cihaz koduna bağlı Premium erişim devam etmez, sonlandırılır.</li>
+      <li><strong>Otomatik İade veya Sipariş İptali Yoktur:</strong> Veri silme işlemi Google Play siparişini iptal etmez veya otomatik geri ödeme oluşturmaz.</li>
+      <li><strong>Google Hesabı Sipariş Geçmişi:</strong> Google Play sipariş ve ödeme kayıtları doğrudan Google LLC tarafından yönetilir ve Google'ın kendi saklama politikalarına tabi olabilir. CozyTV+ kişisel Google hesabınızdaki sipariş geçmişine müdahale edemez.</li>
+      <li><strong>Uygulamanın Yeniden Kurulması:</strong> Kullanıcı uygulamayı yeniden yüklerse satın alma geri yükleme işlemi Google Play doğrulamasına ve ürünün geçerliliğine bağlıdır.</li>
+      <li><strong>Yerel Çalma Listeleri ve Akışlar:</strong> Cihazınızda yerel olarak tutulan M3U listeleri, Xtream giriş bilgileri ve izleme geçmişi CozyTV+ sunucularına asla iletilmez. Bu verileri CozyTV+ Ayarlar menüsünden <em>Reset App (Uygulamayı Sıfırla)</em> seçeneğiyle veya cihaz ayarlarından uygulama verilerini temizleyerek anında silebilirsiniz.</li>
+    </ul>
+
+    <h3>2.6 Gizlilik Politikası ve İletişim</h3>
+    <p>Kişisel verilerin işlenmesi ve gizlilik ilkelerimiz hakkında kapsamlı bilgi edinmek için <a href="/privacy.html">Gizlilik Politikası (Privacy Policy)</a> sayfamızı inceleyebilirsiniz.</p>
+    <p>Veri silme talepleri veya gizlilik ile ilgili her türlü sorunuz için geliştirici ile irtibata geçebilirsiniz: <a href="mailto:htok2005@gmail.com"><strong>htok2005@gmail.com</strong></a>.</p>
+  </article>
 </main>
+
 <footer>
-  <div>© 2026 Cosmo Online · CozyTV+ · Developer: Hakan Tokgöz · Contact: <a href="mailto:htok2005@gmail.com">htok2005@gmail.com</a></div>
-  <div style="margin-top:8px">
-    <a href="/index.html" style="margin-right:14px">Home</a>
-    <a href="/cozytv-legal/privacy.html" style="margin-right:14px">Privacy Policy</a>
-    <a href="/terms.html" style="margin-right:14px">Terms of Use</a>
-    <a href="/support.html" style="margin-right:14px">Support</a>
+  <div>&copy; 2026 CozyTV+ &middot; Geliştirici / Developer: Hakan Tokgöz &middot; İletişim: <a href="mailto:htok2005@gmail.com">htok2005@gmail.com</a></div>
+  <div class="footer-links">
+    <a href="/index.html">Home</a>
+    <a href="/privacy.html">Privacy Policy</a>
+    <a href="/terms.html">Terms of Use</a>
+    <a href="/support.html">Support</a>
     <a href="/cozytv-legal/data-deletion.html">Data Deletion</a>
   </div>
 </footer>
