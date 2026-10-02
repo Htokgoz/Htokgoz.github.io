@@ -336,7 +336,7 @@
         <tr>
           <td><strong>Pseudonymized Device Identifier</strong></td>
           <td><span class="badge-deleted">Permanently Overwritten</span></td>
-          <td>The application uses a one-way, pseudonymized device identifier derived from the stable device identifier provided by Android. The raw Android ID is never stored in the backend database. During deletion, the stored pseudonymized value is irreversibly overwritten with an anonymous placeholder (e.g. <code>deleted_&lt;id&gt;</code>).</td>
+          <td>The application uses a one-way, pseudonymized device identifier derived from the stable device identifier provided by Android. The stable identifier provided by Android is transmitted securely over HTTPS and processed ephemerally only to derive this pseudonymized identifier; the raw Android identifier is never persisted in the backend database and is never logged. IMEI numbers, MAC addresses, IMSI, SIM serial numbers, device serial numbers, and advertising identifiers are never collected. During deletion, the stored pseudonymized value is irreversibly overwritten with an anonymous placeholder (e.g. <code>deleted_&lt;id&gt;</code>).</td>
         </tr>
         <tr>
           <td><strong>Active Premium Entitlements</strong></td>
@@ -359,9 +359,9 @@
           <td>Temporary checkout and session initiation records are permanently deleted.</td>
         </tr>
         <tr>
-          <td><strong>Technical Metadata</strong></td>
+          <td><strong>Technical Device Metadata</strong></td>
           <td><span class="badge-deleted">Cleared</span></td>
-          <td>Platform information is set to <code>deleted</code>, and application version metadata is cleared to <code>null</code>.</td>
+          <td>Platform information is set to <code>deleted</code>. All technical device specifications&mdash;including device category (phone, tablet, TV), operating system version, Android SDK/API level, device manufacturer, device model, and application version&mdash;are permanently cleared to <code>null</code>.</td>
         </tr>
         <tr>
           <td><strong>Premium Feature Access</strong></td>
@@ -378,7 +378,7 @@
       <li><strong>Limited Google Play Payment Audit Records:</strong> Official Google Play order IDs (e.g. <code>GPA.XXXX-XXXX</code>), transaction amounts, currency codes, payment status, and completion timestamps are retained in payment audit records.</li>
       <li><strong>Statutory Justification:</strong> These limited payment audit records are retained exclusively to process refunds, address chargebacks, prevent fraudulent transactions, meet tax declarations, comply with accounting rules, and satisfy statutory legal audit requirements.</li>
       <li><strong>Association:</strong> Retained financial records are linked exclusively to the anonymized device record.</li>
-      <li><strong>Identifiers NOT Stored:</strong> Plaintext purchase tokens, raw Android IDs, IPTV playlist URLs, usernames, and passwords are <strong>never stored</strong> in the backend database.</li>
+      <li><strong>Identifiers NOT Persisted:</strong> Plaintext purchase tokens, raw Android identifiers, IPTV playlist URLs, usernames, and passwords are <strong>never persisted</strong> in the backend database.</li>
       <li><strong>Strict Purpose Limitation:</strong> Retained records are strictly restricted to statutory accounting, tax, fraud prevention, and audit obligations. They are never repurposed for profiling or marketing.</li>
       <li><strong>Maximum Retention Period:</strong> Legally required financial and accounting records are retained for a maximum of <strong>up to 10 years</strong> in accordance with applicable tax, commercial, and accounting legislation. Once mandatory statutory retention periods expire, these records are permanently and securely deleted.</li>
     </ul>
@@ -450,7 +450,7 @@
         <tr>
           <td><strong>Takma Adlı Cihaz Tanımlayıcısı</strong></td>
           <td><span class="badge-deleted">Kalıcı Olarak Üzerine Yazılır</span></td>
-          <td>Uygulama, Android tarafından sağlanan kararlı cihaz tanımlayıcısından türetilmiş, tek yönlü ve takma adlı bir cihaz kimliği kullanır. Ham Android kimliği backend veritabanında asla saklanmaz. Veri silme sırasında saklanan bu takma adlı cihaz kimliği değeri geri döndürülemeyecek şekilde anonim bir işaretçi (örn. <code>deleted_&lt;id&gt;</code>) ile üzerine yazılarak silinir.</td>
+          <td>Uygulama, Android tarafından sağlanan kararlı cihaz tanımlayıcısından türetilmiş, tek yönlü ve takma adlı bir cihaz kimliği kullanır. Android tarafından sağlanan kararlı tanımlayıcı, tek yönlü takma adlı cihaz kimliği türetmek amacıyla HTTPS üzerinden güvenli biçimde iletilir ve yalnızca geçici olarak işlenir; ham Android tanımlayıcısı backend veritabanında kalıcı olarak saklanmaz ve loglanmaz. IMEI numarası, MAC adresi, IMSI, SIM seri numarası, cihaz seri numarası ve reklam kimliği hiçbir şekilde toplanmaz. Veri silme sırasında saklanan bu takma adlı cihaz kimliği değeri geri döndürülemeyecek şekilde anonim bir işaretçi (örn. <code>deleted_&lt;id&gt;</code>) ile üzerine yazılarak silinir.</td>
         </tr>
         <tr>
           <td><strong>Aktif Premium Yetki Kayıtları</strong></td>
@@ -473,9 +473,9 @@
           <td>Ödeme başlatma ve oturum kayıtları tamamen silinir.</td>
         </tr>
         <tr>
-          <td><strong>Teknik Meta Veriler</strong></td>
-          <td><span class="badge-deleted">Sıfırlanır</span></td>
-          <td>Platform bilgisi <code>deleted</code> yapılır, uygulama sürüm bilgisi <code>null</code> olarak temizlenir.</td>
+          <td><strong>Teknik Cihaz Meta Verileri</strong></td>
+          <td><span class="badge-deleted">Temizlenir / Sıfırlanır</span></td>
+          <td>Platform bilgisi <code>deleted</code> yapılır. Tüm teknik cihaz özellikleri&mdash;cihaz kategorisi (telefon, tablet, Android TV, Google TV, LG webOS TV), işletim sistemi sürümü, Android SDK/API seviyesi, cihaz üreticisi, cihaz modeli ve uygulama sürümü&mdash;kalıcı olarak <code>null</code> yapılarak temizlenir.</td>
         </tr>
         <tr>
           <td><strong>Premium Özellik Erişimi</strong></td>
