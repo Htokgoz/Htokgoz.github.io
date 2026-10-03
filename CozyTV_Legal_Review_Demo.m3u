@@ -82,6 +82,9 @@ https://live-hls-web-aje.getaj.net/AJE/index.m3u8
 #EXTINF:-1 tvg-id="NHKWorldJapan.jp" tvg-name="NHK World-Japan" group-title="Live TV - Japan",NHK World-Japan
 https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
 
+#EXTINF:-1 tvg-name="CNN" tvg-logo="https://i.imgur.com/vyrc1I1.png" tvg-id="CNN.us" tvg-chno="1" tvg-country="US" group-title="USA",CNN
+https://turnerlive.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_0_3564000.m3u8
+
 https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/ccfb9634-70ef-46e2-9173-d3f611fd1ac7:BRU/variant/9c59e29527591aeb0127faea9cda9921/bandwidth/5980000.m3u8
 
 #EXTINF:-1 tvg-id="movie.sintel-trailer" tvg-name="Sintel Trailer" group-title="Movies - Open Demo",Sintel Trailer — Blender Foundation (CC BY)
