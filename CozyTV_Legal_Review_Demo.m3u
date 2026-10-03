@@ -24,6 +24,46 @@ https://tv-trtkurdi.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="TRTWorld.tr" tvg-name="TRT World" group-title="Live TV - English",TRT World (English)
 https://tv-trtworld.medya.trt.com.tr/master.m3u8
 
+
+#EXTINF:-1 tvg-name="TRT 1" tvg-logo="https://i.imgur.com/j786OLG.png" tvg-id="TRT1.tr" tvg-chno="1" tvg-country="TR" group-title="Turkey",TRT 1
+https://tv-trt1.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 tvg-name="TRT 2" tvg-logo="https://i.imgur.com/lNWrOE2.png" tvg-id="TRT2.tr" tvg-chno="2" tvg-country="TR" group-title="Turkey",TRT 2 Ⓖ
+https://tv-trt2.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 tvg-name="TRT Haber" tvg-logo="https://i.imgur.com/OVfo8Ab.png" tvg-id="TRTHaber.tr" tvg-chno="3" tvg-country="TR" group-title="Turkey",TRT Haber
+https://tv-trthaber.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 tvg-name="TRT Spor" tvg-logo="https://i.imgur.com/N2wGZyf.png" tvg-id="TRTSpor.tr" tvg-chno="4" tvg-country="TR" group-title="Turkey",TRT Spor Ⓖ
+https://tv-trtspor1.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 tvg-name="TRT Spor 2" tvg-logo="https://i.imgur.com/ysKteM8.png" tvg-chno="5" tvg-country="TR" group-title="Turkey",TRT Spor 2 Ⓖ
+https://tv-trtspor2.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 tvg-name="TRT Çocuk" tvg-logo="https://i.imgur.com/QLFmD6d.png" tvg-id="TRTCocuk.tr" tvg-chno="6" tvg-country="TR" group-title="Turkey",TRT Çocuk
+https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 tvg-name="TRT Müzik" tvg-logo="https://i.imgur.com/fIVFCEd.png" tvg-chno="7" tvg-country="TR" group-title="Turkey",TRT Müzik
+https://tv-trtmuzik.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 tvg-name="TRT Belgesel" tvg-logo="https://i.imgur.com/MGO87pe.png" tvg-id="TRTBelgesel.tr" tvg-chno="8" tvg-country="TR" group-title="Turkey",TRT Belgesel
+https://tv-trtbelgesel-dai.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 tvg-name="TRT Avaz" tvg-logo="https://i.imgur.com/VhTwXu5.png" tvg-id="TRTAvaz.tr" tvg-chno="9" tvg-country="TR" group-title="Turkey",TRT Avaz
+https://tv-trtavaz.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 tvg-name="TRT Kurdî" tvg-logo="https://i.imgur.com/6BpymfB.png" tvg-id="TRTKurdi.tr" tvg-chno="10" tvg-country="TR" group-title="Turkey",TRT Kurdî
+https://tv-trtkurdi.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 tvg-name="TRT Arabi" tvg-logo="https://i.imgur.com/yyhWOZs.png" tvg-id="TRTArabi.tr" tvg-chno="11" tvg-country="TR" group-title="Turkey",TRT Arabi
+https://tv-trtarabi.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 tvg-name="TRT World" tvg-logo="https://i.imgur.com/JEA2xpv.png" tvg-id="TRTWorld.tr" tvg-chno="12" tvg-country="TR" group-title="Turkey",TRT World
+https://tv-trtworld.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 tvg-name="TRT Türk" tvg-logo="https://i.imgur.com/OSTOQNw.png" tvg-id="TRTTurk.tr" tvg-chno="13" tvg-country="TR" group-title="Turkey",TRT Türk
+https://tv-trtturk.medya.trt.com.tr/master.m3u8
+
 #EXTINF:-1 tvg-id="France24.fr@English" tvg-name="France 24 English" group-title="Live TV - English",France 24 English
 https://live.france24.com/hls/live/2037218/F24_EN_HI_HLS/master_2300.m3u8
 
