@@ -1,147 +1,62 @@
 #EXTM3U
-#PLAYLIST:Checked by CODECS.COM M3U Checker
+# CozyTV+ Google Play Review Demo Playlist
+# Prepared: 2026-10-01
+#
+# LIVE TV NOTICE
+# The live entries below point to publicly accessible streams published by
+# official broadcasters and listed by public IPTV indexes as free-to-air.
+# Availability and regional access may change at the broadcaster's discretion.
+#
+# OPEN MOVIE NOTICE
+# Blender open movies and Caminandes episodes are copyright Blender Foundation
+# and are used under the Creative Commons Attribution licence (CC BY).
+# Licence information: https://studio.blender.org/remixing/
+# This playlist is for Google Play review and player-function testing only.
 
-#EXTINF:-1 tvg-id="TRT1.tr" tvg-logo="https://i.imgur.com/j786OLG.png" group-title="Turkey",TRT 1
-https://tv-trt1.medya.trt.com.tr/master.m3u8
-
-#EXTINF:-1 tvg-id="TRT2.tr" tvg-logo="https://i.imgur.com/lNWrOE2.png" group-title="Turkey",TRT 2 Ⓖ
-https://tv-trt2.medya.trt.com.tr/master.m3u8
-
-#EXTINF:-1 tvg-id="TRTHaber.tr" tvg-logo="https://i.imgur.com/OVfo8Ab.png" group-title="Turkey",TRT Haber
+#EXTINF:-1 tvg-id="TRTHaber.tr" tvg-name="TRT Haber" group-title="Live TV - Turkish",TRT Haber (Turkish)
 https://tv-trthaber.medya.trt.com.tr/master.m3u8
 
-#EXTINF:-1 tvg-id="TRTSpor.tr" tvg-logo="https://i.imgur.com/N2wGZyf.png" group-title="Turkey",TRT Spor Ⓖ
-https://tv-trtspor1.medya.trt.com.tr/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/ysKteM8.png" group-title="Turkey",TRT Spor 2 Ⓖ
-https://tv-trtspor2.medya.trt.com.tr/master.m3u8
-
-#EXTINF:-1 tvg-id="TRTCocuk.tr" tvg-logo="https://i.imgur.com/QLFmD6d.png" group-title="Turkey",TRT Çocuk
-https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/fIVFCEd.png" group-title="Turkey",TRT Müzik
-https://tv-trtmuzik.medya.trt.com.tr/master.m3u8
-
-#EXTINF:-1 tvg-id="TRTBelgesel.tr" tvg-logo="https://i.imgur.com/MGO87pe.png" group-title="Turkey",TRT Belgesel
-https://tv-trtbelgesel-dai.medya.trt.com.tr/master.m3u8
-
-#EXTINF:-1 tvg-id="TRTAvaz.tr" tvg-logo="https://i.imgur.com/VhTwXu5.png" group-title="Turkey",TRT Avaz
-https://tv-trtavaz.medya.trt.com.tr/master.m3u8
-
-#EXTINF:-1 tvg-id="TRTKurdi.tr" tvg-logo="https://i.imgur.com/6BpymfB.png" group-title="Turkey",TRT Kurdî
+#EXTINF:-1 tvg-id="TRTKurdi.tr" tvg-name="TRT Kurdi" group-title="Live TV - Kurdish",TRT Kurdi (Kurdish)
 https://tv-trtkurdi.medya.trt.com.tr/master.m3u8
 
-#EXTINF:-1 tvg-id="TRTArabi.tr" tvg-logo="https://i.imgur.com/yyhWOZs.png" group-title="Turkey",TRT Arabi
-https://tv-trtarabi.medya.trt.com.tr/master.m3u8
-
-#EXTINF:-1 tvg-id="TRTWorld.tr" tvg-logo="https://i.imgur.com/JEA2xpv.png" group-title="Turkey",TRT World
+#EXTINF:-1 tvg-id="TRTWorld.tr" tvg-name="TRT World" group-title="Live TV - English",TRT World (English)
 https://tv-trtworld.medya.trt.com.tr/master.m3u8
 
-#EXTINF:-1 tvg-id="TRTTurk.tr" tvg-logo="https://i.imgur.com/OSTOQNw.png" group-title="Turkey",TRT Türk
-https://tv-trtturk.medya.trt.com.tr/master.m3u8
-
-#EXTINF:-1 tvg-id="BloombergTelevision.us" tvg-logo="https://i.imgur.com/VnCcH73.png" group-title="USA",Bloomberg
-https://bloomberg.com/media-manifest/streams/us.m3u8
-
-#EXTINF:-1 tvg-id="CBSNews.us" tvg-logo="https://i.imgur.com/nki2HDQ.png" group-title="USA",CBS News
-https://cbsnews.akamaized.net/hls/live/2020607/cbsnlineup_8/master.m3u8
-
-#EXTINF:-1 tvg-id="France24.fr@English" group-title="Live TV - English",France 24 English
+#EXTINF:-1 tvg-id="France24.fr@English" tvg-name="France 24 English" group-title="Live TV - English",France 24 English
 https://live.france24.com/hls/live/2037218/F24_EN_HI_HLS/master_2300.m3u8
 
-#EXTINF:-1 tvg-id="France24.fr@French" group-title="Live TV - French",France 24 Français
+#EXTINF:-1 tvg-id="France24.fr@French" tvg-name="France 24 French" group-title="Live TV - French",France 24 Français
 https://live.france24.com/hls/live/2037179/F24_FR_HI_HLS/master_2300.m3u8
 
-#EXTINF:-1 tvg-id="France24.fr@Spanish" group-title="Live TV - Spanish",France 24 Español
+#EXTINF:-1 tvg-id="France24.fr@Spanish" tvg-name="France 24 Spanish" group-title="Live TV - Spanish",France 24 Español
 https://live.france24.com/hls/live/2037220/F24_ES_HI_HLS/master_2300.m3u8
 
-#EXTINF:-1 tvg-id="France24.fr@Arabic" group-title="Live TV - Arabic",France 24 Arabic
+#EXTINF:-1 tvg-id="France24.fr@Arabic" tvg-name="France 24 Arabic" group-title="Live TV - Arabic",France 24 Arabic
 https://live.france24.com/hls/live/2037222/F24_AR_HI_HLS/master_2300.m3u8
 
-#EXTINF:-1 tvg-id="NHKWorldJapan.jp" group-title="Live TV - Japan",NHK World-Japan
+#EXTINF:-1 tvg-id="AlJazeera.qa@English" tvg-name="Al Jazeera English" group-title="Live TV - English",Al Jazeera English
+https://live-hls-web-aje.getaj.net/AJE/index.m3u8
+
+#EXTINF:-1 tvg-id="NHKWorldJapan.jp" tvg-name="NHK World-Japan" group-title="Live TV - Japan",NHK World-Japan
 https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
 
-#EXTINF:-1 tvg-id="CNBC.us" tvg-logo="https://i.imgur.com/BTasyOy.png" group-title="USA",CNBC Ⓨ
-https://www.youtube.com/c/CNBC/live
+#EXTINF:-1 tvg-id="movie.big-buck-bunny" tvg-name="Big Buck Bunny" group-title="Movies - CC BY",Big Buck Bunny — Blender Foundation (CC BY)
+https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4
 
-#EXTINF:-1 tvg-id="BloombergTelevision.us" tvg-logo="https://i.imgur.com/VnCcH73.png" group-title="USA",Bloomberg
-https://bloomberg.com/media-manifest/streams/us.m3u8
+#EXTINF:-1 tvg-id="movie.sintel" tvg-name="Sintel" group-title="Movies - CC BY",Sintel — Blender Foundation (CC BY)
+https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4
 
-#EXTINF:-1 tvg-id="ABCNews.us" tvg-logo="https://i.imgur.com/7sJLzKi.png" group-title="USA",ABC News
-https://abcnews-streams.akamaized.net/hls/live/2023560/abcnewshudson1/master.m3u8
+#EXTINF:-1 tvg-id="movie.tears-of-steel" tvg-name="Tears of Steel" group-title="Movies - CC BY",Tears of Steel — Blender Foundation (CC BY)
+https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4
 
-#EXTINF:-1 tvg-id="CBSNews.us" tvg-logo="https://i.imgur.com/nki2HDQ.png" group-title="USA",CBS News
-https://cbsnews.akamaized.net/hls/live/2020607/cbsnlineup_8/master.m3u8
+#EXTINF:-1 tvg-id="movie.elephants-dream" tvg-name="Elephants Dream" group-title="Movies - CC BY",Elephants Dream — Blender Foundation (CC BY)
+https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4
 
-#EXTINF:-1 tvg-id="BBCFood.us" tvg-logo="https://i.imgur.com/N3xiz4m.png" group-title="USA",BBC Food
-https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5fb5844bf5514d0007945bda/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel
+#EXTINF:-1 tvg-id="series.caminandes.s01e01" tvg-name="Caminandes S01E01" group-title="Series - Caminandes (CC BY)",Caminandes S01E01 — Llama Drama
+https://amssamples.streaming.mediaservices.windows.net/634cd01c-6822-4630-8444-8dd6279f94c6/CaminandesLlamaDrama4K.ism/manifest(format=m3u8-aapl)
 
-#EXTINF:-1 tvg-id="BBCHome.us" tvg-logo="https://i.imgur.com/Ii8DX1x.png" group-title="USA",BBC Home
-https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5fb5836fe745b600070fc743/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel
+#EXTINF:-1 tvg-id="series.caminandes.s01e02" tvg-name="Caminandes S01E02" group-title="Series - Caminandes (CC BY)",Caminandes S01E02 — Gran Dillama
+https://video.blender.org/download/videos/a69d68a5-a0e0-4a80-9d66-49f093c97aaf-720.mp4
 
-#EXTINF:-1 tvg-id="S4C.uk" tvg-logo="https://i.imgur.com/vrcbnBv.png" group-title="UK",S4C Ⓖ
-https://live-uk.s4c-cdn.co.uk/out/v1/a0134f1fd5a2461b9422b574566d4442/live_uk.m3u8
-
-#EXTINF:-1 tvg-id="QVCUK.uk" tvg-logo="https://i.imgur.com/6TWUVrh.png" group-title="UK",QVC UK Ⓢ
-https://qvcuk-live.akamaized.net/hls/live/2097112/qvc/3/3.m3u8
-
-#EXTINF:-1 tvg-id="TJC.uk" tvg-logo="https://i.imgur.com/fk5rEje.png" group-title="UK",TJC
-https://cdn-shop-lc-01.akamaized.net/Content/HLS_HLS/Live/channel(TJCOTT)/index.m3u8
-
-#EXTINF:-1 tvg-id="GreatMovies.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/9/92/Great%21_Movies_logo_2021.svg/500px-Great%21_Movies_logo_2021.svg.png" group-title="UK",Great! Movies Ⓢ
-https://amg01753-narrativeuk-amg01753c3-lg-gb-1833.playouts.now.amagi.tv/playlist/amg01753-narrativeuk-greatmovies-lggb/playlist.m3u8
-
-#EXTINF:-1 tvg-id="GemsTV.uk" tvg-logo="https://i.imgur.com/IR2sTag.png" group-title="UK",GemsTV Ⓢ
-https://lo3.gemporia.com/abrgemporiaukgfx/smil:livestream.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="GreatRomance.uk" tvg-logo="https://www.freeview.co.uk/sites/default/files/styles/255_wide/public/2023-09/GREAT-Christmas-logo.png" group-title="UK",Great! Romance Ⓢ
-https://amg01753-narrativeuk-amg01753c2-lg-gb-1832.playouts.now.amagi.tv/playlist/amg01753-narrativeuk-greatchristmas-lggb/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Blaze.uk" tvg-logo="https://i.imgur.com/6UcPWP9.png" group-title="UK",Blaze Ⓖ
-https://live.blaze.tv/live7/blaze/bitrate1.isml/live.m3u8
-
-#EXTINF:-1 tvg-id="TBNUK.uk" tvg-logo="https://i.imgur.com/9vzEz1b.png" group-title="UK",TBN UK Ⓢ
-https://live-tbn-ssai.simplestreamcdn.com/v1/master/774d979dd66704abea7c5b62cb34c6815fda0d35/tbn-live/manifest.m3u8
-
-#EXTINF:-1 tvg-id="JewelleryMaker.uk" tvg-logo="https://i.imgur.com/O7SdkBh.png" group-title="UK",Jewellery Maker
-https://lo3.gemporia.com/abrjewellerymaker/smil:livestreamFullHD.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="HobbyMaker.uk" tvg-logo="https://i.imgur.com/VWHp5Tl.png" group-title="UK",Hobby Maker
-https://lo3.gemporia.com/abrhobbymakerukgfx/smil:livestreamFullHD.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Pop.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/3/36/Pop_UK_TV_Logo_%282015%29.svg/500px-Pop_UK_TV_Logo_%282015%29.svg.png" group-title="UK",Pop Ⓢ
-https://amg01753-narrativeentert-popkids-lggb-xyy5k.amagi.tv/ts-eu-w1-n2/playlist/amg01753-narrativeentert-popkids-lggb/playlist.m3u8
-
-#EXTINF:-1 tvg-id="BBCNews.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/BBC_News_2022_%28Alt%29.svg/500px-BBC_News_2022_%28Alt%29.svg.png" group-title="UK",BBC News
-https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8
-
-#EXTINF:-1 tvg-id="GBNews.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/3/35/GB_News_Logo.svg/500px-GB_News_Logo.svg.png" group-title="UK",GB News
-https://live-gbnews.simplestreamcdn.com/live5/gbnews/bitrate1.isml/manifest.m3u8
-
-#EXTINF:-1 tvg-id="France24English.fr" tvg-logo="https://i.imgur.com/61MSiq9.png" group-title="UK",France 24 Ⓨ
-https://www.youtube.com/c/france24english/live
-
-#EXTINF:-1 tvg-id="BloombergTVEurope.uk" tvg-logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1074.png" group-title="UK",Bloomberg TV
-https://bloomberg.com/media-manifest/streams/eu.m3u8
-
-#EXTINF:-1 tvg-id="movie.sintel-trailer" group-title="Movies - Open Demo",Sintel Trailer — Blender Foundation (CC BY)
-https://media.w3.org/2010/05/sintel/trailer.mp4
-
-#EXTINF:-1 tvg-id="movie.big-buck-bunny-trailer" group-title="Movies - Open Demo",Big Buck Bunny Trailer — Blender Foundation (CC BY)
-https://media.w3.org/2010/05/bunny/trailer.mp4
-
-#EXTINF:-1 tvg-id="movie.mozilla-flower" group-title="Movies - Open Demo",Flower Sample — Mozilla (CC0)
-https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4
-
-#EXTINF:-1 tvg-id="movie.w3c-large-controls" group-title="Movies - Open Demo",Large Links Buttons and Controls — W3C WAI
-https://media.w3.org/wai/perspective-videos/large-links-buttons-controls.mp4
-
-#EXTINF:-1 tvg-id="series.w3c-accessibility.s01e01" group-title="Series - W3C Accessibility",Accessibility S01E01 — Clear Layout and Design
-https://media.w3.org/wai/perspective-videos/clear-layout-design.mp4
-
-#EXTINF:-1 tvg-id="series.w3c-accessibility.s01e02" group-title="Series - W3C Accessibility",Accessibility S01E02 — Colors with Good Contrast
-https://media.w3.org/wai/perspective-videos/colors-with-good-contrast.mp4
-
-#EXTINF:-1 tvg-id="series.w3c-accessibility.s01e03" group-title="Series - W3C Accessibility",Accessibility S01E03 — Video Captions
-https://media.w3.org/wai/perspective-videos/video-captions.mp4
-
+#EXTINF:-1 tvg-id="series.caminandes.s01e03" tvg-name="Caminandes S01E03" group-title="Series - Caminandes (CC BY)",Caminandes S01E03 — Llamigos
+https://sveltejs.github.io/assets/caminandes-llamigos.mp4
